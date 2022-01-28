@@ -3,14 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegisterComponent } from './components/register/register/register.component';
 import { ListComponent } from './components/list/list/list.component';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 
 const routes: Routes = [
 
 
-    {path: '', component: RegisterComponent},
-    // {path: 'register', component: RegisterComponent},
+    {path: '', component: HomeComponent},
+    {path: 'home', component: HomeComponent},
     {path: 'list', component: ListComponent},
     ];
 
