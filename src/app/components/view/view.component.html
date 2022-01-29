@@ -1,5 +1,7 @@
-<mat-card>
-    <mat-card-title class="card">Ver Mascotas</mat-card-title>
+ <mat-card >
+   
+        <mat-toolbar class="card" style="
+        background: cornsilk; ">Ver Mascotas</mat-toolbar>
     <div class="row">
         <div class="col" *ngFor="let card of persons">
             <mat-card-content>Nombre de Mascota</mat-card-content>
@@ -11,6 +13,7 @@
         </div>
     </div>
     <mat-card-actions class="card">
-        <button mat-button (click)="onNoClick()">Acepar</button>
+        <button  mat-raised-button color="accent" (click)="onNoClick()" style="
+        color: white;">Aceptar</button>
     </mat-card-actions>
 </mat-card>

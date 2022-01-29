@@ -6,4 +6,6 @@
 
 .mat-dialog-container {
     background: bottom !important;
+ transform: none;
+                opacity: 82%;
 }
