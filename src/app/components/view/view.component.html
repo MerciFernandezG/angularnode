@@ -1,5 +1,5 @@
 <mat-card>
-    <mat-card-title class="card">Ver Mascotas</mat-card-title>
+    <mat-card-title class="card" style="color: #ff4081;">Ver Mascotas</mat-card-title>
     <div class="row">
         <div class="col" *ngFor="let card of persons">
             <mat-card-content>Nombre de Mascota</mat-card-content>
@@ -11,6 +11,6 @@
         </div>
     </div>
     <mat-card-actions class="card">
-        <button mat-button (click)="onNoClick()">Acepar</button>
+        <button mat-raised-button color="accent" (click)="onNoClick()">Acepar</button>
     </mat-card-actions>
 </mat-card>

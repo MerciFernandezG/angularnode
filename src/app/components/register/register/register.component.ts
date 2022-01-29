@@ -31,11 +31,6 @@ export class RegisterComponent implements OnInit {
         console.log(result, 'bien');
         this.router.navigate(['home']);
         this.alertSuccess();
-      // }, (error) => {
-      //   this.alertError();
-      //   this.personForm.reset()
-      //   console.log(error, 'Error');
-      //   this.router.navigate(['home']);
       })
     } else {
       this.alertError();
@@ -75,7 +70,7 @@ export class RegisterComponent implements OnInit {
     })
     Toast.fire({
       icon: 'error',
-      title: 'Erro, Registre Nuevamente'
+      title: 'Error, Registre Nuevamente'
     })
   }
 }
