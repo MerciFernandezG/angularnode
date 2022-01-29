@@ -1,8 +1,52 @@
+<app-navbar></app-navbar>
 
-<div class="cardss">
-<div class="card" style="width: 39rem;">
-    <div class="card-body">
-        <form>
+<div class="cardss header">
+<div class="card" style="width: 39rem; opacity: 58%;">
+  <mat-card class="text">
+    <!-- <div class="card-body"> -->
+      <div class="example-container form">
+        
+        <mat-form-field hintLabel="Max 10 characters" appearance="fill">
+          
+          <mat-label>ingrese nombre</mat-label>
+          <input matInput  class="text" #input maxlength="10" placeholder="Nombre">
+          <!-- <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint> -->
+        </mat-form-field>
+        <mat-form-field hintLabel="Max 10 characters" appearance="fill">
+          <mat-label>ingrese apellido</mat-label>
+          <input matInput  class="text" #input maxlength="10" placeholder="Apellido">
+          <!-- <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint> -->
+        </mat-form-field>
+      </div>
+      <div class=" form">
+        <mat-form-field hintLabel="Max 10 characters" appearance="fill">
+          
+          <mat-label>email</mat-label>
+          <input matInput  class="text" #input maxlength="10" placeholder="pat@example.com">
+          <!-- <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint> -->
+        </mat-form-field>
+        <mat-form-field hintLabel="Max 10 characters" appearance="fill">
+          <mat-label>nombre mascota</mat-label>
+          <input matInput  class="texto" #input maxlength="10" placeholder="nobre mascota">
+          <!-- <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint> -->
+        </mat-form-field>
+      </div>
+
+      <div class=" form">
+        <mat-form-field hintLabel="Max 10 characters" class="text" appearance="fill">
+          
+          <mat-label>peso</mat-label>
+          <input matInput class="text" #input maxlength="10" placeholder="peso mascota">
+          <!-- <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint> -->
+        </mat-form-field>
+        <mat-form-field hintLabel="Max 10 characters" appearance="fill">
+          <mat-label>nombre mascota</mat-label>
+          <input matInput  class="text" #input maxlength="10" placeholder="raza mascota">
+          <!-- <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint> -->
+        </mat-form-field>
+      </div>
+     
+        <!-- <form>
             <div class="row">
                 <div class="form-group col-md-6">
                   <label for="inputEmail4">nombre</label>
@@ -55,6 +99,8 @@
                 </div>
               </div>
 
-          </form>
-    </div>
+          </form> -->
+    <!-- </div> -->
+  </mat-card>
+  </div>
   </div>

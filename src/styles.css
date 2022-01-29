@@ -1,8 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    width: 100vw;
+    /* width: 100vw; */
     height: 90vh;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.header{
+    width: 100vw;
+    height: 88.9vh;
+    background-image: url(../src/assets/img/petscor3.jpg);
+    background-position: center; 
+
+}
+.text{
+    color: beige;
+    font-size: large;
+    font-weight: 500;
+    text-shadow: 0.1em 0.1em #4f5f6e;
+
+}
+.cardss{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}

@@ -8,3 +8,9 @@
 .center {
     text-align: center;
 }
+
+.texto{
+    font-weight: 600;
+    color: beige;
+    font-size: revert;
+}
