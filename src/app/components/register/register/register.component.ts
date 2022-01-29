@@ -31,14 +31,14 @@ export class RegisterComponent implements OnInit {
         console.log(result, 'bien');
         this.router.navigate(['home']);
         this.alertSuccess();
-      // }, (error) => {
-      //   this.alertError();
-      //   this.personForm.reset()
-      //   console.log(error, 'Error');
-      //   this.router.navigate(['home']);
+      }, (error) => {
+        this.alertError();
+        this.personForm.reset()
+        console.log(error, 'Error');
+        this.router.navigate(['home']);
       })
     } else {
-      this.alertError();
+      // this.alertError();
       console.log('Error');
       this.personForm.reset()
     }

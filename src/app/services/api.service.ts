@@ -21,8 +21,8 @@ export class ApiService {
     return this.http.get(`${this.Url_Back}/${data}`)
   }
 
-  registerPerson(data: Person):Observable<Person>{
-    return this.http.post<Person>(`${this.Url_Back}`,data);
+  registerPerson(data: Person){
+    return this.http.post(`${this.Url_Back}`,data, {responseType: 'text'});
   }
 
 }
